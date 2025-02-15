@@ -15,24 +15,23 @@ Before running the code, ensure you have the following dependencies installed:
 -   Torch
 -   CUDA (if using a GPU)
 -   DeepSORT
-- 
+  
 You can install the necessary libraries using pip:
 `pip install -r requirements.txt`
 
+You can download the rest of the files from the link in additionals.txt.
 
 ## Files and Folders
 
 -   `weights/yolov8n.pt`: YOLOv8 model weights.
--   `adchcheck.h5`: Pre-trained age classification model. The model details are in the AgeClassifier directory.
+-   `adchcheck.h5`: Pre-trained age classification model. 
 -   `deep_sort/deep/checkpoint/ckpt.t7`: DeepSORT checkpoint for tracking.
--   `test vids/4.mp4`: Input video file. Add your own.
--   `output/out4.mp4`: Output video file. Rename it as your own.
 
 
 
 ## How to Run
 
-1.  **Set Up the Environment:** Make sure you have all dependencies installed. Place the video file to be processed in the `test vids/` directory.
+1.  **Set Up the Environment:** Make sure you have all dependencies installed. Create a folder called `testvids/` and store the test videos in there.
     
 2.  **Run the Script:** Execute the script in your Python environment:
 `python track_count_persons.py`
